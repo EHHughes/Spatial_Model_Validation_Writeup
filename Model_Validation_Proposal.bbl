@@ -1,0 +1,49 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gunning et~al.(2022)Gunning, Morrison, Okamoto, Scott, Astete,
+  Vásquez, Gould, and Lloyd]{gunning2022critical}
+Christian~E. Gunning, Amy~C. Morrison, Kenichi~W. Okamoto, Thomas~W. Scott,
+  Helvio Astete, Gissella~M. Vásquez, Fred Gould, and Alun~L. Lloyd.
+\newblock A critical assessment of the detailed aedes aegypti simulation model
+  skeeter buster 2 using field experiments of indoor insecticidal control in
+  iquitos, peru.
+\newblock \emph{PLOS Neglected Tropical Diseases}, 16\penalty0 (12):\penalty0
+  1--26, 12 2022.
+\newblock \doi{10.1371/journal.pntd.0010863}.
+\newblock URL \url{https://doi.org/10.1371/journal.pntd.0010863}.
+
+\bibitem[Hancock et~al.(2016)Hancock, White, Ritchie, Hoffmann, and
+  Godfray]{hancock2016predicting}
+Penelope~A Hancock, Vanessa~L White, Scott~A Ritchie, Ary~A Hoffmann, and
+  H~Charles~J Godfray.
+\newblock {Predicting Wolbachia invasion dynamics in Aedes aegypti populations
+  using models of density-dependent demographic traits}.
+\newblock \emph{BMC Biol.}, 14:\penalty0 96, 2016.
+\newblock URL \url{https://doi.org/10.1186/s12915-016-0319-5}.
+
+\bibitem[Kim et~al.(2023)Kim, Harris, Kim, Shemesh, Messer, and
+  Greenbaum]{kim2023incorporating}
+Jaehee Kim, Keith~D Harris, Isabel~K Kim, Shahar Shemesh, Philipp~W Messer, and
+  Gili Greenbaum.
+\newblock Incorporating ecology into gene drive modelling.
+\newblock \emph{Ecol. Lett.}, 26\penalty0 (S1):\penalty0 S62--S80, 2023.
+\newblock URL \url{https://doi.org/10.1111/ele.14194}.
+
+\bibitem[Otero et~al.(2008)Otero, Schweigmann, and Solari]{otero2008stochastic}
+Marcelo Otero, Nicol{\'a}s Schweigmann, and Hern{\'a}n~G Solari.
+\newblock {A stochastic spatial dynamical model for Aedes aegypti}.
+\newblock \emph{Bull. Math. Biol.}, 70:\penalty0 1297--1325, 2008.
+\newblock URL \url{10.1007/s11538-008-9300-y}.
+
+\bibitem[Xu and Bonsall(2026)]{xu2026emergent}
+Ziqian Xu and Michael~B Bonsall.
+\newblock {Emergent density dependence: an individual-based model of larval
+  competition in \emph{Aedes aegypti} (Dipter: Culcidae)}.
+\newblock \emph{Under Review}, 2026.
+
+\end{thebibliography}

@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[numbers, square]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{graphicx}
+\graphicspath{{./Images/}}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{xcolor}
+\newcommand{\CN}{\textcolor{red}{[CITATION NEEDED]}}
+\newcommand{\SN}{\textcolor{blue}{[STATISTIC NEEDED]}}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+% \maketitle locally overrides \thefootnote with \@fnsymbol (*, dagger, ...) for
+% the author footnotes; redefine \@fnsymbol so the affiliation markers are numeric.
+\makeatletter
+\renewcommand{\@fnsymbol}[1]{\number#1}
+\makeatother
+
+\title{Validation of a Novel Individual-Based Model of \emph{Aedes aegypti} using Data from Iquitos, Peru.}
+
+\date{\today}
+
+\begin{document}
+
+\section*{Validation of a Novel Individual-Based Model of \emph{Aedes aegypti} using Data from Iquitos, Peru.}
+
+In order to accurately simulate the effects of a gene drive on a population, an accurate understanding of the ecology of the target species is essential \cite{kim2023incorporating}. Our recent research has sought to better understand how density-dependence will interact with a gene drive for \emph{Aedes aegypti}, using a `bottom-up' agent-based approach. We now aim to validate our model against real world datasets, and are particularly interested in the spatial dataset published in \cite{gunning2022critical}.
+
+\subsection*{What We Have Done}
+We (Michael Bonsall, Elliott Hughes, and Ziqian Xu) have developed an individual-based model for mosquito larval behaviour. In prior work \cite{xu2026emergent} we investigated the behaviour of larval populations under differing environmental parameters, while in forthcoming work we extend this model to incorporate genetics and study the factors that determine gene drive performance in a simulated environment. One key advantage of our model is that density-dependence is emergent -- rather than prescribing a functional form for density-dependence (as in prior work, e.g.\! the Markov-Chain based approach of \citeauthor{otero2008stochastic} \cite{otero2008stochastic}) density-dependence emerges from the interactions between larvae as they compete for resources. Simulating these larval interactions is computationally intensive, so to accelerate simulations we have also developed computationally-efficient surrogate models using machine learning. These surrogate models can simulate larval behaviour at a site in far less time, unlocking the ability to conduct spatial simulations. 
+
+\subsection*{What We Would Like to Do}
+Now that we have developed this model and computationally efficient surrogates, we would like to test the ability of our model to reproduce observed mosquito behaviour in real-world settings. To test the ability of the model to reproduce behaviour at a single breeding site, we have obtained a dataset from an open-air cage trial (first published in \cite{hancock2016predicting}). However, once we have determined that the model can reproduce dynamics at the scale of a single cage site, we would like to validate the model in a spatial setting with many interacting breeding sites. An ideal dataset for our purpose would be \cite{gunning2022critical}.
+
+\subsection*{What We Need}
+To do this, we need access to the underlying larval, pupal, and adult abundance data from \cite{}. To our knowledge, while simulation outputs from this study are available, the observed abundances are not. We would like to partner with your group to use this data to calibrate our model. Insights from your modelling group would also be appreciated as we develop and improve our model's treatment of the adult stage of the mosquito lifecycle, which is currently very simple and could be much refined.
+
+\bibliography{mosquito_bib.bib}
+\end{document}

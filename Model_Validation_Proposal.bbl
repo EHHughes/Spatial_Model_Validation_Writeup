@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -32,6 +32,16 @@ Jaehee Kim, Keith~D Harris, Isabel~K Kim, Shahar Shemesh, Philipp~W Messer, and
 \newblock Incorporating ecology into gene drive modelling.
 \newblock \emph{Ecol. Lett.}, 26\penalty0 (S1):\penalty0 S62--S80, 2023.
 \newblock URL \url{https://doi.org/10.1111/ele.14194}.
+
+\bibitem[Magori et~al.(2009)Magori, Legros, Puente, Focks, Scott, Lloyd, and
+  Gould]{magori2009skeeter}
+Krisztian Magori, Mathieu Legros, Molly~E Puente, Dana~A Focks, Thomas~W Scott,
+  Alun~L Lloyd, and Fred Gould.
+\newblock {Skeeter Buster: a stochastic, spatially explicit modeling tool for
+  studying Aedes aegypti population replacement and population suppression
+  strategies}.
+\newblock \emph{PLoS Negl. Trop. Dis.}, 3\penalty0 (9):\penalty0 e508, 2009.
+\newblock URL \url{https://doi.org/10.1371/journal.pntd.0000508}.
 
 \bibitem[Otero et~al.(2008)Otero, Schweigmann, and Solari]{otero2008stochastic}
 Marcelo Otero, Nicol{\'a}s Schweigmann, and Hern{\'a}n~G Solari.

@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[numbers, square]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{graphicx}
+\graphicspath{{./Images/}}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{xcolor}
+\newcommand{\CN}{\textcolor{red}{[CITATION NEEDED]}}
+\newcommand{\SN}{\textcolor{blue}{[STATISTIC NEEDED]}}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+% \maketitle locally overrides \thefootnote with \@fnsymbol (*, dagger, ...) for
+% the author footnotes; redefine \@fnsymbol so the affiliation markers are numeric.
+\makeatletter
+\renewcommand{\@fnsymbol}[1]{\number#1}
+\makeatother
+
+\title{Methodology for the Overlapping Generations Model}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Our current model has non-overlapping generations (as you would expect if you ran a lab experiment) but the real world datasets we are interested in have overlapping generations. This document describes how we intend to extend the current model to allow for overlapping generations.
+\end{abstract}
+
+\section{Model Overview}
+The current model is a discrete-time, agent-based model of a mosquito population with four lifestages (eggs, larvae, pupae, and adults). This model assumes that generations are non-overlapping and only the larval phase is resolved in a detailed manner. Dynamics that occur in the other three phases are simplified extensively (e.g.\! adults are assumed to migrate once, breed once, and then die) or reduced to a fixed survival rate. While this approach significantly reduces the complexity of the model, some of these assumptions are not compatible with overlapping generations. Consequently, we will make a number of adjustments to the model, but these will be relatively minimal to avoid significantly complicating the model. In the following sections, we will briefly outline our proposed methodology for each of the life-stages.
+
+\subsection{Eggs}
+We assume that eggs after laying face a fixed probability of mortality set by the global average temperature and that, assuming eggs survive, the gestational time of each egg is drawn from a [INSERT DISTRIBUTION NAME] with [INSERT DISTRIBUTIONAL PARAMETERS]. This distribution reflects [SAY MORE ABOUT THE MOTIVATION HERE].
+
+\subsection{Larvae}
+Larval development and survival will be determined by larval competition for resources, as developed in previous work. In previous work, with non-overlapping generations, larvae must pupate within a fixed window to survive. In this model, we will instead assume that larvae have a maximum viable age of X hours, with larvae over this age assumed to die and automatically removed from the simulation. 
+
+\subsection{Pupae}
+As with eggs, we will assume that each Pupa faces a fixed probability of mortality set by the global average temperature and a randomly determined length of pupation. This pupation length is drawn from a [INSERT DISTRIBUTION NAME] with [INSERT DISTRIBUTIONAL PARAMETERS].
+
+\subsection{Adults}
+We assume that adults of both genders face a constant mortality risk of $0.2$ (so that the average lifespan is five days, consistent with \cite{lambert2022meta}), and, during each day, have a 30\% chance of migrating to one of four adjacent sites (each of these sites are assumed to be equally likely, following the same approach as \cite{legros2016comparison}). We continue to assume that females mate only once, following the Skeeter Buster 2 model \cite{legros2016comparison} and for simplicity assume that unmated females have a fixed probability of mating each day [], and that, if they mate, they have an equal probability of choosing any male in the same location. After mating, there is a [INSERT DISTRIBUTION NAME] delay before eggs are laid into the location that the females inhabit at the end of the gestational period.
+
+\bibliography{mosquito_bib.bib}
+
+\end{document}
